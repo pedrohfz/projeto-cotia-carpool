@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+}
+  
+:root {
+    --color-white: #fff;
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-purple: #9c88ff;
+}
+
+.white-mode :root {
+    --color-white: #fff;
+    
+}
+
+.header {
+    background-color: var(--color-dark2);
+    box-shadow: 1px 1px 4px var(--color-dark4);
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+  
+.header,
+.navigation-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.logo-header {
+    display: table;
+}
+    
+.logo-header img {
+    width: 60px;
+    display: table-cell;
+    float: left;
+}
+    
+.logo-header h2 {
+    display: table-cell;
+    float: left;
+    padding-left: 15px;
+    margin-top: 16.5px;
+}
+  
+.navigation-header {
+    gap: 40px;
+}
+  
+.navigation-header a {
+    text-decoration: none;
+    color: var(--color-purple);
+    font-weight: bold;
+    transition: 1s;
+}
+    
+.navigation-header a:hover {
+    color: var(--color-white);
+}
+    
+.active {
+    background-color: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card-a {
+    position: relative;
+    background-color: var(--color-dark5);
+    width: 100%;
+    height: 400px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-b {
+    position: relative;
+    background-color: var(--color-dark1);
+    width: 100%;
+    height: 500px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    width: 65em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main img {
+    width: 300px;
+    padding: 20px;
+}
+
+.new-card {
+    position: relative;
+    background-color: var(--color-dark2);
+    height: auto;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.card-text h1 {
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card-text p {
+    padding-top: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.images {
+    display: grid;
+    text-align: center;
+}
+
+.images h1 {
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.images img {
+    width: 300px;
+    border: 3px solid var(--color-purple);
+}
+
+.images a {
+    background-color: var(--color-dark3);
+    color: var(--color-purple);
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.images a:hover {
+    color: var(--color-white);
+}
+
+.content-text {
+    padding-left: 100px;
+}
+
+.content-text h1 {
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    width: 640px;
+    height: 65px;
+}
+
+.content-text p {
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    width: 765px;
+    height: 180px;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: min-content;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.button-div a {
+    background-color: var(--color-dark3);
+    color: var(--color-purple);
+    text-decoration: none;
+    font-weight: bold; 
+    transition: 1s;  
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button-div a:hover {
+    color: var(--color-white);
+}
+
+.footer {
+    position: relative;
+    background-color: var(--color-dark5);
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h1 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.footer h2 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
